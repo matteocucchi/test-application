@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoUrl: https://github.com/matteocucchi/test-application.git
+    repoURL: https://github.com/matteocucchi/test-application.git
     targetVersion: HEAD
     path: dev
   destination:
