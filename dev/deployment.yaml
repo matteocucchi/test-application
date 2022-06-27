@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: test-app
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: test-app
   replicas: 2
   template:
     metadata:
       labels:
-        app: myapp
+        app: test-app
     spec:
       containers:
-      - name: myapp
-        image: redis:bullseye
+      - name: test-app
+        image: matteocucchi/test-app:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
