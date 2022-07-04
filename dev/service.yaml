@@ -6,4 +6,4 @@ spec:
   selector:
     app: test-app
   ports:
-  - port: 5000
+  - port: 80
