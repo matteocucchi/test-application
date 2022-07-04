@@ -7,3 +7,5 @@ spec:
     app: test-app
   ports:
   - port: 5000
+    protocol: TCP
+    targetPort: 5000
