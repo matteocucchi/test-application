@@ -15,6 +15,5 @@ spec:
         backend:
           service:
             name: test-app-service
-            namespace: test-app
             port:
               number: 5000
