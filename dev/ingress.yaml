@@ -10,8 +10,7 @@ spec:
   - host: "test.app.com"
     http:
       paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          serviceName: test-app-service
-          servicePort: 5000
+      - backend:
+        serviceName: test-app-service
+        servicePort: 5000
+      path: /
