@@ -9,3 +9,7 @@ spec:
     - port: 5000
       protocol: TCP
       targetPort: 5000
+status:
+  loadBalancer:
+    ingress:
+    - ip: 172.16.16.100
