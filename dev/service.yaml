@@ -5,11 +5,8 @@ metadata:
 spec:
   selector:
     app: test-app
+  type: nodePort
   ports:
     - port: 5000
-      protocol: TCP
       targetPort: 5000
-status:
-  loadBalancer:
-    ingress:
-    - ip: 172.16.16.100
+      nodePort: 32001
